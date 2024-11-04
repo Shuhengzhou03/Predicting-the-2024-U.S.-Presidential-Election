@@ -429,13 +429,22 @@ This paper demonstrates the potential of Bayesian modelling in analyzing and int
 The Marquette Law School Poll holds a prominent position in American politics, particularly within Wisconsin’s political landscape. As a trusted gauge of public opinion in this critical swing state, it is frequently referenced by politicians, media, and scholars for election forecasting and policy analysis [@conant2006wisconsin]. Known for its commitment to high-quality research methods and independence, the Marquette Law School Poll achieves notable credibility and influence in its data. This credibility is reinforced by its high numeric grade and transparency score, rated at 3 and 10, respectively, which imply a high level of reliability in its findings. The combination of methodological rigour and transparency strengthens the trustworthiness of its survey results, making it a valuable tool for understanding public opinion trends and informing policy discussions.
 
 ## Probability Panel Methodology
-The Marquette Law School Poll’s methodology, based on information provided by Marquette Law School, employs a **probability panel** approach to ensure sample accuracy and representativeness. This method involves randomly selecting participants from a verified voter database, ensuring that each individual has a known chance of selection. By doing so, the poll captures the diversity of Wisconsin’s population across race, gender, age, and geography. Additionally, the probability panel allows Marquette to track participants over time, offering insight into how opinions on key issues and elections shift.
+The probability panel methodology is a statistical sampling method designed to ensure both accuracy and representativeness of a sample.[@scherpenzeel2011data]  In this approach, participants are randomly selected from a verified voter database, with each individual having a known chance of being chosen. The Marquette Law School Poll employs this probability panel technique to enhance scientific rigor and capture the diversity of Wisconsin’s population across race, gender, age, and geographic location, making the sample more reflective of the population as a whole.
+
+A key advantage of the probability panel approach is its longitudinal design, which involves repeatedly surveying the same group of participants over time. The Marquette Law School Poll uses this method to track changes in opinions and attitudes at different points, providing insights into how public views on key issues and elections evolve. This approach not only allows for current voter analysis but also provides valuable long-term insights for policy and election research, especially in critical swing states like Wisconsin.
+
 
 ## Sampling and Data Collection
 Each survey cycle includes over 700 registered Wisconsin voters [@marquette_poll_about], who are contacted via both cell phones and landlines to maximize sample reach and inclusivity. Interviews are conducted by professional interviewers over several nights, enhancing access to a representative population by reaching individuals with varying availability. This dual-frame approach ensures the inclusion of perspectives from all eligible voters, including those who rely solely on cell phones.
 
 ## Advantages and Limitations of the Probability Panel
-The probability panel methodology has notable strengths. Random sampling reduces selection bias and enhances generalizability, making it a robust tool for capturing statewide opinion trends. Repeated surveys with the same panel also facilitate longitudinal analysis, revealing shifts in public attitudes in response to political events and policy changes. However, panel studies have limitations: participants may experience **panel conditioning**, where repeated exposure influences their responses. Additionally, this method requires substantial resources to recruit and retain a balanced panel, as certain groups may gradually drop out over time, potentially affecting the sample’s representativeness.
+The probability panel methodology has notable strengths and limitations, supported by various scholarly perspectives. Through random sampling, probability panels reduce selection bias and enhance generalizability, making them robust tools for capturing statewide opinion trends. Additionally, repeated surveys with the same panel facilitate longitudinal analysis, allowing researchers to track shifts in public attitudes in response to political events and policy changes. [@bartels2000] demonstrates that repeated measures improve the predictive power of panel studies by revealing trends over time. However, panel studies have limitations; participants may experience panel conditioning, where repeated exposure influences their responses, potentially impacting data validity. Moreover, this method demands significant resources to recruit and retain a balanced panel, as dropout is common among certain demographic groups, risking the sample’s representativeness. [@warren2012] note that sustained investments are required to maintain a diverse panel, with selective dropout over time presenting a challenge for generalizable findings. These factors highlight both the advantages and constraints of probability panels in social science research.
+
+## Comparison Between Probability Panel and Convenience Sampling:
+In polling, the probability panel and convenience sampling methods offer contrasting approaches to data collection, each with unique advantages and limitations. I chose these two methods for comparison due to their distinct methodologies and how they address the trade-off between accuracy and efficiency. The probability panel method, commonly employed by highly rated pollsters, selects participants through random sampling from a target population and surveys them repeatedly over time. This method enhances generalizability by minimizing selection bias, as each participant is statistically representative of the population being studied. Additionally, its longitudinal design allows researchers to observe changes in individual opinions over time, making it particularly effective for understanding shifts in attitudes related to political events or policy changes. However, probability panels are resource-intensive, requiring substantial funding and time to recruit, manage, and retain a balanced panel. The retention of participants can be challenging, as some may drop out over time, potentially affecting the sample’s representativeness.
+
+In contrast, convenience sampling, used by some lower-rated pollsters in this dataset, recruits participants based on ease of access and does not employ random selection. This method is often faster and more cost-effective than probability sampling, as it bypasses the need for rigorous participant selection. According to [@etikan2016], convenience sampling allows researchers to gather opinions quickly, which can be useful for preliminary insights or situations where time and resources are limited. However, the lack of randomization introduces a risk of sampling bias, as participants are self-selected or chosen based on availability, leading to potential overrepresentation or underrepresentation of certain groups. This bias limits the generalizability of the results, as findings from a convenience sample may not accurately reflect the opinions of the larger population.
+In summary, probability panels are ideal for detailed, representative studies that require high accuracy, despite their resource demands. Meanwhile, convenience sampling offers an efficient alternative for quick insights but comes at the cost of reduced reliability and generalizability. Together, these methods illustrate a fundamental balance in polling between data quality and logistical efficiency, providing valuable insights depending on the study’s goals and constraints.
 
 ## Addressing Non-Response and Questionnaire Design
 To address non-response, the Marquette Law School Poll employs **weighting adjustments** based on demographic characteristics such as age, gender, race, and education, correcting sample imbalances and ensuring that the final sample accurately reflects Wisconsin’s electorate. Furthermore, the questionnaire is designed to be straightforward, minimizing respondent fatigue and confusion. Nonetheless, some questions may simplify complex issues, and limited use of open-ended questions might restrict the deeper exploration of voter motivations.
@@ -703,7 +712,20 @@ Graduate degree
 5 
 
 
-**9. If the election were held today, which candidate would you most likely support?** 
+**9. To ensure quality, please select “Somewhat disagree” as your answer to this question.**
+
+Strongly agree
+
+Somewhat agree
+
+Neutral
+
+Somewhat disagree
+
+Strongly disagree
+
+
+**10. If the election were held today, which candidate would you most likely support?** 
 
 Kamala Harris (Democrat) 
 
@@ -714,11 +736,11 @@ Other (please specify)
 Undecided 
 
 
-**10. If you choose "Other" in the previous question, please specify the person you most likely to support.**
+**11. If you choose "Other" in the previous question, please specify the person you most likely to support.**
 
 
 
-**11. What issues are most important to you in this election? (Select up to 3)** 
+**12. What issues are most important to you in this election? (Select up to 3)** 
 
 Economy 
 
@@ -735,7 +757,7 @@ Foreign policy
 Other (please specify) 
 
 
-**12. How satisfied are you with the current direction of the U.S. government? (Very dissatisfied to Very satisfied)** 
+**13. How satisfied are you with the current direction of the U.S. government? (Very dissatisfied to Very satisfied)** 
 
 1
 
@@ -748,7 +770,7 @@ Other (please specify)
 5
 
 
-**13. How much do you trust the accuracy of public opinion polls? (Highly distrust to Highly trust)** 
+**14. How much do you trust the accuracy of public opinion polls? (Highly distrust to Highly trust)** 
 
 1
 
@@ -761,7 +783,7 @@ Other (please specify)
 5
 
 
-**14. Have you previously participated in political opinion polls?** 
+**15. Have you previously participated in political opinion polls?** 
 
 Yes 
 
