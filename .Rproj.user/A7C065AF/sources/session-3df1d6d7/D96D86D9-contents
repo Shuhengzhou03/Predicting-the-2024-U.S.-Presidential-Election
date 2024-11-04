@@ -839,8 +839,9 @@ Thank you for participating in this survey! Your responses are valuable to our r
 summary(harris_model)
 ```
 
-\newpage
 The model summary for Kamala Harris displays the estimates of coefficients for various predictors, including pollster, state, transparency score, and numeric grade. It provides insight into how each factor contributes to predicting support for Harris in the 2024 election.
+
+\newpage
 
 ## Summary of Trump model
 ```{r}
