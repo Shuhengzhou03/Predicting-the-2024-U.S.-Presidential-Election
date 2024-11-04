@@ -51,7 +51,7 @@ Predicting the outcome of the U.S. presidential election holds significant impor
 In this project, we utilize the statistical programming language R [@citeR], along with essential packages including tidyverse [@tidyverse], palmerpenguins [@palmerpenguins],knitr[@knitr2014], rstanarm [@rstanarm], modelsummary [@modelsummary], janitor [@janitor], arrow [@arrow], and ggplot2 [@ggplot2]. Our data, sourced from FiveThirtyEight [@FiveThirtyEightPollingData2024], contains polling information for the 2024 U.S. Presidential Election. To forecast each candidate's percentage of support, we apply Bayesian generalized linear regression to model the relationship between the support rate as the outcome variable and multiple predictor variables. This method evaluates the influence of each predictor while accounting for the effects of other variables and incorporates prior knowledge to refine predictions as new data is added. Key predictors include the polling organization, pollster quality rating, transparency score, and geographic location, with candidate support as the outcome variable and candidate name (Trump and Harris) as a feature variable. Our analysis aims to estimate candidate support and identify factors most associated with shifts in public opinion leading up to the election.
 
 ## Measurement
-In conducting a statistical analysis of public opinion for the 2024 U.S. Presidential Election, we focus on transforming raw polling data into structured, measurable, and reliable dataset entries. Our aim is to understand shifts in candidate support, particularly for Trump and Harris, by selecting variables that reflect key aspects of polling methodology and public sentiment. Polling agencies gather data through surveys designed to capture representative samples of voter opinions, with each poll result standardized, coded, and organized within the dataset.
+In our analysis of public opinion for the 2024 U.S. Presidential Election, we translate the complex and sometimes conflicting opinions of voters into a structured dataset, focusing on measurable support percentages for Trump and Harris. Polling agencies gather these opinions through surveys designed to capture representative samples, condensing each individual’s nuanced political views into a single metric of candidate support. Although this support percentage is a simplified measure, it serves as a practical outcome variable, allowing us to track shifts in candidate backing across diverse populations.
 
 To ensure consistency and accuracy, we implemented a systematic data-cleaning process, including handling missing values, removing duplicates, filling gaps, and verifying variable formats. For instance, to enhance data transparency and quality, we retained only records with a transparency score of 5 or above and a quality rating of 2.0 or higher, filtering out low-quality or less transparent data sources to improve model reliability. We also focused on relevant variables for analysis, including pollster, quality rating, transparency score, state, candidate name, and support percentage, simplifying the data structure and emphasizing key features influencing prediction results.
 
@@ -232,9 +232,9 @@ Our analysis aimed to predict the support levels for Kamala Harris and Donald Tr
 
 ## Model Summary and Coefficients
 
-For Kamala Harris, the model used 930 observations and 106 predictors, producing coefficient estimates for factors such as pollster and state. Notably, some pollsters like CES/YouGov and Marist contributed positively to Harris’s predicted support, while others like Ipsos and Siena/NYT showed negative coefficients. Among state predictors, Harris’s support was highest in states like California (mean coefficient = 5.1) and Maryland (mean coefficient = 5.1), while states like Texas (mean coefficient = -2.2) and Montana (mean coefficient = -3.8) showed lower predicted support. Transparency score also positively influenced Harris’s predicted support (mean coefficient = 0.3), suggesting a favourable relationship between higher transparency and Harris’s support levels.
+For Kamala Harris, the model used **1100 observations** and **107 predictors**, producing coefficient estimates for factors such as pollster and state. Notably, some pollsters like CES/YouGov and Marist contributed positively to Harris’s predicted support, while others like Ipsos and Siena/NYT showed negative coefficients. Among state predictors, Harris’s support was highest in states like **California (mean coefficient = 5.8)** and **Maryland (mean coefficient = 5.5)**, while states like **Texas (mean coefficient = -2.4)** and **Montana (mean coefficient = -4.1)** showed lower predicted support. Transparency score also positively influenced **Harris’s predicted support (mean coefficient = 0.3)**, suggesting a favorable relationship between higher transparency and Harris’s support levels.
 
-Donald Trump’s model, based on 1639 observations and 112 predictors, showed key differences. Some pollsters, including AtlasIntel and InsiderAdvantage, positively impacted Trump’s predicted support, while others, such as Ipsos and PPIC, were associated with decreased support. State-level predictors highlighted stronger support in states like Florida (mean coefficient = 3.6) and Texas (mean coefficient = 3.1), while states like California (mean coefficient = -7.3) and New York (mean coefficient = -3.4) reflected lower predicted support. Interestingly, the transparency score negatively influenced Trump’s predicted support (mean coefficient = -0.4), suggesting that Trump’s support may be less associated with higher transparency.
+Donald Trump’s model, based on **2076 observations** and **125 predictors**, showed key differences. Some pollsters, including AtlasIntel and InsiderAdvantage, positively impacted Trump’s predicted support, while others, such as Ipsos and PPIC, were associated with decreased support. State-level predictors highlighted stronger support in states like **Florida (mean coefficient = 3.6)** and **Texas (mean coefficient = 2.9)**, while states like **California (mean coefficient = -7.9)** and **New York (mean coefficient = -4.2)** reflected lower predicted support. Interestingly, the transparency score negatively influenced **Trump’s predicted support (mean coefficient = -0.3)**, suggesting that Trump’s support may be less associated with higher transparency.
 
 ## Predictive Insights and Posterior Predictive Checks
 
@@ -467,6 +467,7 @@ However, limitations exist. The panel effect may influence objectivity, as repea
 
 In summary, the Marquette Law School Poll’s probability panel method offers strong reliability and representativeness, making it a valuable tool for long-term public opinion analysis. Nonetheless, the resource demands and potential panel effects suggest cautious interpretation and, where possible, complementary methods to validate findings.
 
+\newpage
 
 # Idealized $100K Election Forecasting Methodology and Survey 
 
@@ -478,11 +479,15 @@ Our goal is to provide an accurate, representative forecast for the 2024 U.S. pr
 
 ### Sampling Approach
 
-We will aim for a sample size of approximately 5,000 respondents, using a **stratified random sampling** method, to ensure that our sample is representative of the U.S. voting population across major demographic groups. Stratified sampling involves dividing the population into distinct subgroups, or "strata" (e.g., by age, gender, race, education, and geographic region). Within each stratum, respondents are randomly sampled in proportion to their presence in the population, allowing us to capture opinions from all significant subgroups.
+We aim for a sample size of approximately 5,000 respondents, selected through **stratified random sampling** to ensure representativeness across demographic groups.
+
+**Definition and Justification of Stratified Sampling:**
+Stratified sampling is a method that divides the population into distinct subgroups, or "strata" (e.g., by age, gender, race, education, and geographic region). Within each stratum, participants are randomly sampled to ensure each subgroup is proportionally represented. This technique is particularly valuable for election forecasting, where different demographic groups exhibit varied voting behaviours [@groves2009survey].
+
 
 **Strengths and Weaknesses of Stratified Sampling:**  
 
-Stratified sampling reduces sampling error and increases the accuracy of estimates within each subgroup, making it especially useful for election forecasting, where certain demographics may have distinct voting patterns. However, stratified sampling requires accurate data on population characteristics to set the correct quotas, and oversampling smaller groups can increase both complexity and costs.
+Stratified sampling reduces sampling error and increases the precision of estimates within each subgroup, which is particularly beneficial for capturing the opinions of smaller or more variable subgroups like non-White voters or those in swing states [@lohr2019sampling]. However, accurate population data is required to determine the appropriate strata sizes, and survey costs and complexity can increase, particularly when oversampling smaller or hard-to-reach groups.
 
 **Sampling Simulation:**
 
@@ -490,6 +495,7 @@ To evaluate the effectiveness of stratified sampling, a simulation could be cond
 
 
 **Stratification and Quotas:**
+
 Each demographic quota will be weighted to reflect its proportion in the general voting population, based on recent U.S. Census data. The primary demographic strata include:
 
 - **Age:** 18-29, 30-44, 45-64, 65+
@@ -506,9 +512,10 @@ Each demographic quota will be weighted to reflect its proportion in the general
 
 We will partner with a reputable survey panel provider, such as Ipsos or YouGov, to ensure high-quality, verified respondents. This will help us reach a diverse pool while maintaining reliability and transparency in respondent recruitment. To supplement this sample, we will target social media ads toward underrepresented demographics. Each respondent will receive a $5 incentive to encourage engagement.
 
-**Considerations for Recruitment Bias:**  
+**Panel Recruitment and Potential Biases:**
 
-Panel respondents may exhibit panel bias, as frequent survey takers might not fully represent the broader population. To address this, we will use social media ads to reach unique respondents and adjust quotas as necessary to align with target demographic proportions.
+Using panel providers is efficient and provides access to verified respondents, but panel bias may arise as frequent survey takers might not represent the broader population [@tourangeau2013science]. To mitigate this, we will include unique respondents through targeted social media ads, especially focusing on underrepresented demographics.
+
 
 ### Survey Design and Implementation
 
@@ -818,6 +825,7 @@ No
 
 Thank you for participating in this survey! Your responses are valuable to our research. If you have any questions or would like more information, please contact: Jiaxuan.song@mail.utoronto.ca
 
+\newpage
 
 # Model Details {#sec-model-details}
 
