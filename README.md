@@ -46,5 +46,5 @@ The repo is structured as:
   - `06-model_data.R`:Develops and optimizes analytical models.
 
 ## Statement on LLM usage
-Parts of the code were developed with the help of ChatGPT-4o. The abstract, introduction, as well as table and results descriptions, were also developed with assistance from ChatGPT-4o.The full chat history is documented in 'other/llm_usage/usage.txt'.
+Parts of the code were developed with the help of ChatGPT-4o. The abstract, introduction, as well as table and results descriptions, were also developed with assistance from ChatGPT-4o.The full chat history is documented in `other/llm_usage/usage.txt`.
 
