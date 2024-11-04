@@ -8,7 +8,7 @@ This repository presents a statistical model aimed at forecasting the support ra
 ## File Structure
 
 The repo is structured as:
-- **data/**
+- **data**
   - `00-simulated_data/`: Contains the simulated data generated for model testing.
     - `us_simulated_polling_data.parquet`
   - `01-raw_data/`: Contains the raw polling data used for analysis.
