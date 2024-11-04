@@ -1,0 +1,26 @@
+{
+    "id": "0E6FCEE9",
+    "path": "~/Desktop/135/Predicting-the-2024-U.S.-Presidential-Election/scripts/06-model_data.R",
+    "project_path": "scripts/06-model_data.R",
+    "type": "r_source",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1730743093308.0,
+    "source_on_save": false,
+    "relative_order": 2,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "154,0",
+        "scrollLine": "129"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1730691939,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1730691939,
+    "read_only": false,
+    "read_only_alternatives": []
+}

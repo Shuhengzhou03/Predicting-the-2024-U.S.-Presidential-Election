@@ -8,7 +8,7 @@ author:
 thanks: "The GitHub Repository containing all data, R code, and other files used in this project is located here:<https://github.com/Shuhengzhou03/Predicting-the-2024-U.S.-Presidential-Election.git>"
 date: today
 date-format: long
-abstract: "We analyze the 2024 U.S. presidential election using Bayesian generalized linear models on aggregated polling data, focusing on predictors such as pollster transparency, state, and poll quality. Our models predict that Kamala Harris is likely to lead with an average support of 47.15%, with her support positively correlated with higher transparency scores among pollsters. In contrast, Donald Trump’s support remains relatively stable across poll transparency levels. State-level predictions highlight close competition in pivotal swing states, including Pennsylvania and Michigan, underscoring their decisive influence on the election outcome. This analysis demonstrates how transparency and geographic factors shape voter sentiment, offering insights to inform future election forecasting."
+abstract: "We analyze the 2024 U.S. presidential election using Bayesian generalized linear models on aggregated polling data, focusing on predictors such as pollster transparency, state, and poll quality. Our models predict that Kamala Harris is likely to lead with an average support of 47.34%, with her support positively correlated with higher transparency scores among pollsters. In contrast, Donald Trump’s support remains relatively stable across poll transparency levels. State-level predictions highlight close competition in pivotal swing states, including Pennsylvania and Michigan, underscoring their decisive influence on the election outcome. This analysis demonstrates how transparency and geographic factors shape voter sentiment, offering insights to inform future election forecasting."
 format: pdf
 number-sections: true
 toc: true
@@ -41,7 +41,7 @@ As a superpower with extensive global influence, the United States asserts its p
 
 The primary estimate of this study is the predicted percentage of support each candidate—Kamala Harris and Donald Trump—is expected to receive in individual polls leading up to the 2024 U.S. presidential election. This support percentage (pct) serves as a continuous outcome variable, representing the proportion of respondents in each poll who favour a given candidate. By modelling pct, we capture support at the poll level, which can then be aggregated across all polls to forecast overall election outcomes. The Bayesian generalized linear approach enables us to incorporate prior distributions and update predictions as new polling data becomes available, enhancing our ability to account for the uncertainty in each poll. To further refine our predictions, we incorporate predictor variables such as pollster reliability scores and transparency measures, adjusting for poll quality and thus providing a more accurate estimate of each candidate’s expected support.
 
-Our analysis using Bayesian generalized linear models reveals several key insights into the factors influencing predicted support for Kamala Harris and Donald Trump in the 2024 U.S. presidential election, ultimately predicting Harris to have a slight lead with average support of 47.15%. Transparency score emerged as a significant predictor, with Harris’s support showing a positive correlation with higher transparency ratings among pollsters, suggesting her supporters may place greater trust in transparent polling sources. In contrast, Trump’s support was less impacted by transparency, indicating a potential difference in how each candidate’s base interacts with polling reliability. Pollster numeric grade also influenced model precision, with high-grade pollsters yielding narrower prediction intervals, underscoring the reliability of these sources. At the state level, predicted support patterns align with historical voting trends, with Harris favoured in Democratic-leaning states like California, while Trump shows stronger support in Republican strongholds such as Texas. However, in pivotal swing states such as Pennsylvania, Michigan, and Georgia, the models reveal tight competition, reflecting the heightened significance of these regions in determining the election outcome. This analysis highlights the importance of transparency and geographic factors in understanding voter sentiment and refining election predictions.
+Our analysis using Bayesian generalized linear models reveals several key insights into the factors influencing predicted support for Kamala Harris and Donald Trump in the 2024 U.S. presidential election, ultimately predicting Harris to have a slight lead with average support of 47.34%. Transparency score emerged as a significant predictor, with Harris’s support showing a positive correlation with higher transparency ratings among pollsters, suggesting her supporters may place greater trust in transparent polling sources. In contrast, Trump’s support was less impacted by transparency, indicating a potential difference in how each candidate’s base interacts with polling reliability. Pollster numeric grade also influenced model precision, with high-grade pollsters yielding narrower prediction intervals, underscoring the reliability of these sources. At the state level, predicted support patterns align with historical voting trends, with Harris favoured in Democratic-leaning states like California, while Trump shows stronger support in Republican strongholds such as Texas. However, in pivotal swing states such as Pennsylvania, Michigan, and Georgia, the models reveal tight competition, reflecting the heightened significance of these regions in determining the election outcome. This analysis highlights the importance of transparency and geographic factors in understanding voter sentiment and refining election predictions.
 
 Predicting the outcome of the U.S. presidential election holds significant importance not only for political parties but also for public stakeholders, analysts, and international observers. The Democratic Party emphasizes that this election impacts more than just the presidency; it holds significant implications for congressional power and will influence America’s future direction in areas such as the economy, social policy, and foreign relations [@gelman1993american]. An accurate forecast model can offer valuable insights into shifts in public sentiment, highlight critical factors influencing voter behaviour, and provide strategic guidance for campaign efforts. Furthermore, understanding the limitations and strengths of polling data helps to reinforce or caution against certain predictive approaches, ultimately contributing to the field of political science and electoral studies.
 
@@ -78,9 +78,9 @@ kable(summary_combined, caption = "Comparison Table of Kamala Harris and Donald 
 
 @tbl-Outcome-Table displays the statistical data on the support rates (`pct`) for Kamala Harris and Donald Trump, including four metrics: candidate name, average support rate (`avg_pct`), minimum support rate (`min_pct`), and maximum support rate (`max_pct`).
 
-For **Donald Trump**, the average support rate is 45.08%, with a minimum of 21% and a maximum of 67.6%. In contrast, **Kamala Harris** has an average support rate of 47.57%, with a minimum of 33% and a maximum of 70.1%. This indicates that, in this dataset, Kamala Harris has a slightly higher overall support rate than Donald Trump, with an average rate that is approximately 2.49% higher. Furthermore, her minimum support rate of 33% is significantly higher than Trump’s lowest rate of 21%, suggesting that Harris’s support is more consistent at lower levels. Additionally, her maximum support rate of 70.1% exceeds Trump’s highest rate of 67.6%, indicating that Harris may have reached higher peaks in support in some parts of the data.
+For **Donald Trump**, the average support rate is 45.30%, with a minimum of 21.00% and a maximum of 70.00%. In contrast, **Kamala Harris** has an average support rate of 47.78%, with a minimum of 25.00% and a maximum of 70.00%. This indicates that, in this dataset, Kamala Harris has a slightly higher overall support rate than Donald Trump, with an average rate approximately 2.48% higher. Furthermore, her minimum support rate of 25.00% is higher than Trump’s lowest rate of 21.00%, suggesting a more stable support base at the lower end. However, their maximum support rates are the same at 70.00%, indicating that both candidates have reached similar peaks in support within this dataset.
 
-In summary, Kamala Harris shows higher average, minimum, and maximum support rates compared to Donald Trump in this dataset. This could imply that Harris has a stronger support base with less fluctuation in her support at the lowest levels. However, these insights are based solely on this sample, and a more comprehensive analysis would require additional context and data sources.
+In summary, Kamala Harris exhibits a higher average and minimum support rate compared to Donald Trump, which may imply a somewhat stronger and more consistent support base. However, these findings are limited to this sample, and further analysis with additional data would be required to draw broader conclusions.
 
 
 \newpage
@@ -131,6 +131,11 @@ data |>
 #| warning: false
 #| label: fig-Support-by-Pollster
 
+# Move PPIC to the first position on the x-axis
+data <- data %>%
+  mutate(pollster = factor(pollster, levels = c("PPIC", setdiff(levels(as.factor(pollster)), "PPIC"))))
+
+# Plot the graph
 data |>
   ggplot(aes(x = pollster, y = pct, color = candidate_name)) +
   geom_jitter(width = 0.2, alpha = 0.7) +
@@ -139,9 +144,13 @@ data |>
     x = "Pollster",
     y = "Support Percentage"
   ) +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  theme(
+    axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1), # Adjust text position
+    plot.margin = margin(10, 20, 10, 10) # Add extra margin to the plot
+  ) +
   scale_x_discrete(guide = guide_axis(check.overlap = TRUE)) +
   scale_color_manual(values = c("#FF9999", "#66CCCC"))
+
 
 
 
@@ -229,7 +238,7 @@ Donald Trump’s model, based on 1639 observations and 112 predictors, showed ke
 
 ## Predictive Insights and Posterior Predictive Checks
 
-Posterior predictive checks confirmed a strong fit for both models, indicating that they reliably capture the observed data trends. Average predicted support was calculated for each candidate, with Kamala Harris receiving an average predicted support of **47.15%** and Donald Trump receiving a lower average. Thus, the model’s aggregated predictions indicate **Kamala Harris as the likely candidate to secure a higher average support** in the dataset analyzed.
+Posterior predictive checks confirmed a strong fit for both models, indicating that they reliably capture the observed data trends. Average predicted support was calculated for each candidate, with Kamala Harris receiving an average predicted support of **47.34%** and Donald Trump receiving a lower average. Thus, the model’s aggregated predictions indicate **Kamala Harris as the likely candidate to secure a higher average support** in the dataset analyzed.
 
 \newpage
 
@@ -373,7 +382,7 @@ print(fig2)
 
 ## Aggregate Prediction and Final Outcome
 
-Based on average support, the model’s aggregate prediction indicates that Kamala Harris is expected to have higher overall support than Donald Trump, with an average predicted support of 47.15%. Given this outcome, **our model predicts Kamala Harris as the candidate more likely to win**, aligning with historical trends in states where she showed significant predicted support.
+Based on average support, the model’s aggregate prediction indicates that Kamala Harris is expected to have higher overall support than Donald Trump, with an average predicted support of 47.34%. Given this outcome, **our model predicts Kamala Harris as the candidate more likely to win**, aligning with historical trends in states where she showed significant predicted support.
 
 
 # Discussion
@@ -469,7 +478,16 @@ Our goal is to provide an accurate, representative forecast for the 2024 U.S. pr
 
 ### Sampling Approach
 
-We will aim for a sample size of approximately 5,000 respondents, using a stratified random sampling method. This approach will ensure representation across demographics such as age, gender, race, education, and geographic location. The sample size allows for a margin of error of ±1.4% at a 95% confidence level, ensuring robust estimates for subgroups.
+We will aim for a sample size of approximately 5,000 respondents, using a **stratified random sampling** method, to ensure that our sample is representative of the U.S. voting population across major demographic groups. Stratified sampling involves dividing the population into distinct subgroups, or "strata" (e.g., by age, gender, race, education, and geographic region). Within each stratum, respondents are randomly sampled in proportion to their presence in the population, allowing us to capture opinions from all significant subgroups.
+
+**Strengths and Weaknesses of Stratified Sampling:**  
+
+Stratified sampling reduces sampling error and increases the accuracy of estimates within each subgroup, making it especially useful for election forecasting, where certain demographics may have distinct voting patterns. However, stratified sampling requires accurate data on population characteristics to set the correct quotas, and oversampling smaller groups can increase both complexity and costs.
+
+**Sampling Simulation:**
+
+To evaluate the effectiveness of stratified sampling, a simulation could be conducted to compare it with simple random sampling. By randomly sampling from demographic strata in previous election data, we could measure the reduction in sampling error and the improved accuracy of subgroup estimates, thus reinforcing stratified sampling's value for election forecasts.
+
 
 **Stratification and Quotas:**
 Each demographic quota will be weighted to reflect its proportion in the general voting population, based on recent U.S. Census data. The primary demographic strata include:
@@ -487,6 +505,10 @@ Each demographic quota will be weighted to reflect its proportion in the general
 ### Recruitment Strategy
 
 We will partner with a reputable survey panel provider, such as Ipsos or YouGov, to ensure high-quality, verified respondents. This will help us reach a diverse pool while maintaining reliability and transparency in respondent recruitment. To supplement this sample, we will target social media ads toward underrepresented demographics. Each respondent will receive a $5 incentive to encourage engagement.
+
+**Considerations for Recruitment Bias:**  
+
+Panel respondents may exhibit panel bias, as frequent survey takers might not fully represent the broader population. To address this, we will use social media ads to reach unique respondents and adjust quotas as necessary to align with target demographic proportions.
 
 ### Survey Design and Implementation
 
@@ -511,6 +533,8 @@ To maintain data quality, we will implement the following:
 - **Attention Checks**: Questions designed to identify inattentive responses.
 
 - **Duplicate Response Prevention**: Google Forms settings will restrict multiple submissions from the same respondent.
+
+- **Response Time Analysis**: Flagging and reviewing responses completed significantly faster than the average time to ensure thoughtful answers.
 
 - **Post-Survey Weighting**: Adjustments based on demographic quotas ensure alignment with the U.S. population profile.
 
