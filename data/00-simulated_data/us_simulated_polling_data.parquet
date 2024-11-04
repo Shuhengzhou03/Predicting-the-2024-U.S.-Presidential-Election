@@ -1,0 +1,201 @@
+state,pollster,numeric_grade,transparency_score,candidate_name,pct
+New York,Emerson College,2,10,Kamala Harris,24.3
+Minnesota,RMG Research,1,8,Donald Trump,40.1
+Minnesota,Ipsos,1,10,Kamala Harris,59.7
+Minnesota,Emerson College,2.5,6,Kamala Harris,54.2
+Indiana,RMG Research,2.5,10,Kamala Harris,20.4
+Minnesota,Emerson College,2.5,8,Kamala Harris,15.4
+Texas,Ipsos,2,6,Kamala Harris,19.3
+Illinois,RMG Research,2.5,9,Donald Trump,29.6
+Colorado,Ipsos,2.5,5,Kamala Harris,1.1
+Wisconsin,YouGov,2,5,Kamala Harris,17.1
+Colorado,RMG Research,2,5,Kamala Harris,39.5
+Wisconsin,Ipsos,1,8,Donald Trump,7.8
+Ohio,AtlasIntel,1,7,Donald Trump,7
+Massachusetts,Emerson College,2,5,Kamala Harris,1.9
+Ohio,RMG Research,1,10,Kamala Harris,17.3
+Tennessee,YouGov,3,9,Donald Trump,34.7
+Ohio,Emerson College,2,9,Donald Trump,2.3
+Ohio,Emerson College,2.5,5,Kamala Harris,43.6
+Pennsylvania,RMG Research,2.5,7,Kamala Harris,53.8
+Illinois,YouGov,2.5,5,Kamala Harris,44.3
+Georgia,RMG Research,3,8,Kamala Harris,24.3
+Georgia,AtlasIntel,1,10,Kamala Harris,4.9
+Pennsylvania,Ipsos,1,9,Kamala Harris,25.4
+Texas,Ipsos,2,5,Kamala Harris,7.8
+Illinois,AtlasIntel,2.5,5,Kamala Harris,1.8
+Tennessee,RMG Research,2.5,7,Donald Trump,7.6
+Wisconsin,YouGov,1,10,Donald Trump,21.4
+Massachusetts,Ipsos,3,8,Donald Trump,14.7
+Tennessee,RMG Research,3,6,Kamala Harris,31
+Texas,RMG Research,2,5,Kamala Harris,34.1
+Arizona,Emerson College,2.5,5,Kamala Harris,26.8
+Ohio,RMG Research,2,9,Kamala Harris,43.4
+Georgia,AtlasIntel,1,10,Donald Trump,20.2
+Wisconsin,YouGov,2,10,Kamala Harris,12.5
+Pennsylvania,RMG Research,3,5,Kamala Harris,59.5
+Missouri,Ipsos,2.5,10,Kamala Harris,0.1
+Illinois,Emerson College,2.5,6,Donald Trump,56.1
+Ohio,Ipsos,2,6,Donald Trump,49.8
+California,RMG Research,2,5,Kamala Harris,19.8
+Tennessee,YouGov,1,9,Kamala Harris,43.8
+Nevada,RMG Research,2,7,Donald Trump,8.3
+Minnesota,Ipsos,2,10,Donald Trump,14.5
+Georgia,Ipsos,2,10,Donald Trump,42.7
+Minnesota,Emerson College,2,6,Kamala Harris,8.5
+Georgia,YouGov,2.5,6,Donald Trump,49.3
+Wisconsin,RMG Research,2.5,9,Kamala Harris,22.9
+Colorado,Emerson College,1,8,Donald Trump,26.2
+Arizona,RMG Research,1,8,Donald Trump,32.6
+Illinois,YouGov,3,7,Kamala Harris,6.1
+Missouri,Emerson College,2.5,10,Donald Trump,45.9
+Florida,RMG Research,1,10,Donald Trump,21.7
+Georgia,RMG Research,2,7,Kamala Harris,55.1
+Virginia,Ipsos,1,6,Donald Trump,43.3
+Wisconsin,Ipsos,2.5,10,Donald Trump,11.9
+Pennsylvania,AtlasIntel,1,10,Kamala Harris,10.9
+Wisconsin,RMG Research,2,9,Kamala Harris,36.9
+Arizona,Ipsos,3,9,Donald Trump,12
+Missouri,AtlasIntel,3,5,Kamala Harris,54.5
+Pennsylvania,RMG Research,3,9,Donald Trump,18.8
+Tennessee,RMG Research,2.5,8,Kamala Harris,11
+Indiana,YouGov,2,10,Kamala Harris,55.3
+Texas,AtlasIntel,3,7,Donald Trump,24.7
+Georgia,RMG Research,3,10,Kamala Harris,36.8
+Texas,Ipsos,2.5,6,Kamala Harris,2.3
+Illinois,AtlasIntel,3,7,Donald Trump,51.3
+Virginia,AtlasIntel,2.5,8,Donald Trump,36.8
+Georgia,Emerson College,3,5,Donald Trump,27.4
+Wisconsin,AtlasIntel,3,9,Donald Trump,15.6
+Florida,AtlasIntel,1,5,Kamala Harris,15.2
+Nevada,Emerson College,1,6,Donald Trump,10.6
+New York,Ipsos,3,6,Donald Trump,38.8
+Indiana,Emerson College,2,6,Kamala Harris,13.1
+Texas,Ipsos,1,5,Donald Trump,1.5
+Missouri,Emerson College,2.5,10,Donald Trump,40.3
+Florida,AtlasIntel,3,8,Donald Trump,4.8
+Wisconsin,RMG Research,1,7,Donald Trump,0.9
+North Carolina,YouGov,3,8,Kamala Harris,13.3
+Florida,RMG Research,3,6,Kamala Harris,20.1
+Georgia,Ipsos,2,10,Kamala Harris,0.7
+Colorado,Ipsos,2.5,10,Kamala Harris,9.3
+Massachusetts,Ipsos,2,5,Kamala Harris,7.7
+Arizona,RMG Research,3,7,Donald Trump,10.1
+New York,YouGov,1,7,Donald Trump,55.2
+Wisconsin,Emerson College,1,7,Kamala Harris,40.9
+Pennsylvania,Emerson College,2.5,9,Donald Trump,0.7
+Indiana,Ipsos,2,10,Kamala Harris,38.2
+North Carolina,RMG Research,2.5,9,Kamala Harris,49.7
+Georgia,Ipsos,2.5,7,Donald Trump,27.4
+Pennsylvania,Emerson College,2.5,10,Donald Trump,28.6
+Indiana,YouGov,1,10,Donald Trump,42.3
+Pennsylvania,Emerson College,2.5,5,Kamala Harris,28
+Massachusetts,RMG Research,2.5,5,Kamala Harris,16.4
+New York,YouGov,3,7,Donald Trump,0.5
+New York,Ipsos,2.5,10,Donald Trump,1.3
+New York,Emerson College,2,7,Donald Trump,14
+Wisconsin,Emerson College,2.5,7,Kamala Harris,52.6
+Georgia,Emerson College,1,10,Donald Trump,55.8
+Texas,AtlasIntel,2.5,7,Kamala Harris,24.5
+Georgia,Emerson College,2,8,Donald Trump,9.1
+Virginia,Ipsos,2,9,Donald Trump,21.5
+Texas,Ipsos,2.5,8,Kamala Harris,22.5
+Nevada,YouGov,2,5,Donald Trump,33.8
+Ohio,RMG Research,3,8,Kamala Harris,18.5
+Illinois,RMG Research,2,5,Donald Trump,46.7
+New York,YouGov,3,6,Donald Trump,55.1
+Georgia,RMG Research,1,9,Kamala Harris,39.9
+Pennsylvania,AtlasIntel,3,5,Kamala Harris,18.3
+New York,YouGov,2.5,10,Kamala Harris,49.4
+Michigan,RMG Research,2.5,9,Donald Trump,36.7
+Texas,Emerson College,2.5,10,Kamala Harris,31.1
+Virginia,YouGov,2.5,10,Kamala Harris,35.8
+New York,Emerson College,2,8,Kamala Harris,18.4
+California,RMG Research,2.5,9,Kamala Harris,38.7
+New York,RMG Research,2.5,9,Kamala Harris,22.9
+Illinois,AtlasIntel,2,8,Donald Trump,35.6
+Massachusetts,AtlasIntel,2,8,Donald Trump,47.7
+Massachusetts,AtlasIntel,2,9,Donald Trump,18
+Ohio,RMG Research,2,10,Kamala Harris,11.9
+New York,Ipsos,2.5,5,Kamala Harris,30.5
+Missouri,YouGov,3,9,Kamala Harris,10.2
+Virginia,AtlasIntel,2.5,7,Donald Trump,16.3
+Massachusetts,YouGov,2.5,10,Donald Trump,37.4
+California,Ipsos,1,5,Kamala Harris,20.5
+Massachusetts,AtlasIntel,2,6,Donald Trump,43.8
+Arizona,Ipsos,2,6,Kamala Harris,13.6
+Ohio,Ipsos,2.5,7,Donald Trump,2.7
+Ohio,RMG Research,3,9,Donald Trump,58.2
+Wisconsin,AtlasIntel,2,5,Kamala Harris,47
+Arizona,Emerson College,2.5,9,Kamala Harris,51.5
+Georgia,YouGov,1,5,Donald Trump,30.3
+California,Emerson College,2,5,Donald Trump,44.5
+Minnesota,YouGov,3,8,Donald Trump,25.7
+New York,YouGov,3,6,Donald Trump,10.2
+Michigan,AtlasIntel,1,8,Kamala Harris,52
+Massachusetts,RMG Research,2.5,5,Kamala Harris,13.4
+Arizona,Ipsos,3,7,Kamala Harris,55.8
+Massachusetts,Ipsos,2,5,Kamala Harris,50.1
+Nevada,AtlasIntel,2.5,9,Donald Trump,7.5
+Minnesota,YouGov,2.5,6,Kamala Harris,46.4
+Indiana,RMG Research,3,6,Donald Trump,50.6
+Wisconsin,YouGov,2,10,Kamala Harris,9.7
+California,Ipsos,2.5,6,Kamala Harris,15.8
+Georgia,RMG Research,3,8,Donald Trump,58.2
+Arizona,YouGov,2.5,9,Kamala Harris,33.2
+North Carolina,Ipsos,2.5,9,Donald Trump,30.4
+Minnesota,Ipsos,1,6,Donald Trump,41.1
+Virginia,AtlasIntel,2.5,7,Donald Trump,34.2
+Nevada,Emerson College,2.5,10,Donald Trump,33.2
+California,YouGov,3,8,Kamala Harris,16.1
+Nevada,AtlasIntel,3,9,Kamala Harris,4.3
+Michigan,Ipsos,2.5,9,Kamala Harris,57.2
+Illinois,Emerson College,3,10,Kamala Harris,18.4
+Florida,AtlasIntel,2.5,8,Donald Trump,11.6
+Indiana,Emerson College,3,8,Kamala Harris,56.3
+Illinois,YouGov,1,8,Donald Trump,48.7
+California,YouGov,3,10,Kamala Harris,34.1
+Minnesota,RMG Research,2.5,7,Kamala Harris,52.7
+California,Emerson College,1,7,Donald Trump,12.1
+North Carolina,RMG Research,2.5,5,Kamala Harris,31.3
+Nevada,Emerson College,1,5,Kamala Harris,15.4
+Michigan,AtlasIntel,3,7,Donald Trump,7.1
+Nevada,RMG Research,2,7,Kamala Harris,51.3
+Michigan,RMG Research,2.5,7,Donald Trump,3.1
+Illinois,Ipsos,1,5,Kamala Harris,38.1
+Florida,YouGov,2,10,Kamala Harris,37.2
+Minnesota,YouGov,2,10,Donald Trump,11.1
+Michigan,Emerson College,2.5,6,Kamala Harris,3.4
+Florida,Ipsos,2,5,Kamala Harris,30.1
+Tennessee,YouGov,1,5,Donald Trump,20.1
+Georgia,Emerson College,2,8,Kamala Harris,43.5
+Missouri,YouGov,2.5,9,Donald Trump,45.8
+Nevada,Ipsos,2.5,6,Kamala Harris,57.5
+Virginia,YouGov,2,9,Donald Trump,14.7
+Michigan,RMG Research,1,7,Donald Trump,11.3
+Georgia,Ipsos,2.5,5,Donald Trump,49.2
+Missouri,Ipsos,3,5,Kamala Harris,21.1
+Michigan,Emerson College,3,6,Kamala Harris,25.4
+Nevada,AtlasIntel,3,10,Donald Trump,50.4
+New York,RMG Research,1,8,Kamala Harris,28.8
+Georgia,Emerson College,2.5,8,Kamala Harris,19.4
+Arizona,Ipsos,2,5,Donald Trump,54.2
+Georgia,Ipsos,1,10,Donald Trump,55.7
+Minnesota,AtlasIntel,1,9,Kamala Harris,27.2
+Florida,AtlasIntel,1,7,Donald Trump,51.1
+California,Ipsos,2.5,7,Kamala Harris,52.6
+Texas,AtlasIntel,3,10,Donald Trump,2.9
+Tennessee,Emerson College,3,6,Donald Trump,28.7
+Minnesota,AtlasIntel,2,7,Kamala Harris,39.9
+Georgia,YouGov,2.5,10,Kamala Harris,38
+Virginia,YouGov,2.5,5,Kamala Harris,4.7
+Minnesota,Emerson College,3,10,Donald Trump,34.7
+California,Emerson College,2.5,6,Donald Trump,4.3
+New York,Emerson College,3,7,Kamala Harris,37.3
+Indiana,Emerson College,1,6,Kamala Harris,31.7
+Tennessee,AtlasIntel,3,5,Kamala Harris,37.4
+Tennessee,YouGov,2,9,Kamala Harris,31.4
+Tennessee,RMG Research,1,8,Donald Trump,39.9
+Virginia,RMG Research,2,7,Kamala Harris,29.2
+California,AtlasIntel,1,8,Donald Trump,44.2
+Minnesota,Ipsos,2,10,Kamala Harris,53.8
