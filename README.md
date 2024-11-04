@@ -17,8 +17,8 @@ The repo is structured as:
     - `us_polling_cleaned_data.parquet`
 
     
-    - **models/**: Contains fitted models for both Harris and Trump, saved in RDS format.
- - `harris_model.rds`
+- **models/**: Contains fitted models for both Harris and Trump, saved in RDS format.
+  - `harris_model.rds`
   - `trump_model.rds`
 
 - **other/**:
