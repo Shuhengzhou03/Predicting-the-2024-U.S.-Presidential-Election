@@ -482,6 +482,7 @@ Our goal is to provide an accurate, representative forecast for the 2024 U.S. pr
 We aim for a sample size of approximately 5,000 respondents, selected through **stratified random sampling** to ensure representativeness across demographic groups.
 
 **Definition and Justification of Stratified Sampling:**
+
 Stratified sampling is a method that divides the population into distinct subgroups, or "strata" (e.g., by age, gender, race, education, and geographic region). Within each stratum, participants are randomly sampled to ensure each subgroup is proportionally represented. This technique is particularly valuable for election forecasting, where different demographic groups exhibit varied voting behaviours [@groves2009survey].
 
 
