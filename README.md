@@ -21,7 +21,7 @@ The repo is structured as:
   - `harris_model.rds`
   - `trump_model.rds`
 
-- **other/**:
+- **other/**
   - `llm_usage/`: Includes documentation about interactions with large language models (LLMs).
     - `usage.txt`
   - `sketches/`: Contains images related to exploratory data analysis and dataset exploration.
